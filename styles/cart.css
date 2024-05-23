@@ -1,0 +1,24 @@
+.cart-pane{
+	-fx-background-color:#fbffa9;
+	-fx-background-radius:10px;
+	-fx-border-color:#E77719;
+	-fx-border-radius:10px;
+	-fx-border-width:2px;
+}
+.total-price{
+	-fx-background-radius:5px;
+}
+
+.checkout-button{
+	-fx-background-color:#3ce549;
+}
+.clear-button{
+	-fx-background-color:#e94646
+}
+
+.cart-grid{
+	-fx-vgap: 10px; /* Vertical gap */
+}
+.scroll-pane{
+	-fx-padding:10 0 0 10;
+}

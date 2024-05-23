@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="window_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2A2E31; -fx-border-color: #E77719;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.loginController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="495.0" fitWidth="400.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/loginmage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="455.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="email_input" layoutX="99.0" layoutY="188.0" prefHeight="50.0" prefWidth="250.0" promptText="Username" style="-fx-border-color: #E77719; -fx-background-color: #333639; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password_input" layoutX="99.0" layoutY="256.0" prefHeight="50.0" prefWidth="250.0" promptText="Password" style="-fx-border-color: #E77719; -fx-background-color: #333639; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="login_button" layoutX="154.0" layoutY="326.0" mnemonicParsing="false" onAction="#checkLogin" prefHeight="45.0" prefWidth="140.0" styleClass="login-button" text="Start Ordering" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="close_button" layoutX="394.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="40.0" prefWidth="40.0" styleClass="close-button" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="login_label" layoutX="163.0" layoutY="384.0" textFill="#ff1515">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="87.0" prefHeight="78.0" prefWidth="29.0" styleClass="animated_letter" text="N" textFill="WHITE">
+               <font>
+                  <Font name="Sakkal Majalla" size="51.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="217.0" layoutY="87.0" prefHeight="78.0" prefWidth="29.0" styleClass="animated_letter" text="T" textFill="WHITE">
+               <font>
+                  <Font name="Sakkal Majalla" size="51.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="238.0" layoutY="87.0" prefHeight="78.0" prefWidth="29.0" styleClass="animated_letter" text="I" textFill="WHITE">
+               <font>
+                  <Font name="Sakkal Majalla" size="51.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="87.0" prefHeight="78.0" prefWidth="29.0" styleClass="animated_letter" text="C" textFill="WHITE">
+               <font>
+                  <Font name="Sakkal Majalla" size="51.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="146.0" layoutY="117.0" prefHeight="65.0" prefWidth="171.0" styleClass="animated_letter" text="Restaurant" textFill="WHITE">
+               <font>
+                  <Font name="Sakkal Majalla" size="51.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <stylesheets>
+      <URL value="@../styles/login.css" />
+      <URL value="@../styles/main.css" />
+   </stylesheets>
+</BorderPane>

@@ -1,0 +1,15 @@
+
+.login-button{
+	-fx-background-color:#E77719;
+
+}
+.login-button:hover{
+	-fx-opacity:.8;
+}
+
+.animated_letter{
+	-fx-text-fill:#FFFFFF;
+}
+.animated_letter:hover{
+	-fx-text-fill:#E77719;
+}

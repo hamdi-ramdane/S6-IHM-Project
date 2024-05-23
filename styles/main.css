@@ -1,0 +1,10 @@
+.close-button{
+	-fx-background-color:#E77719;
+}
+
+.reactive-button:hover{
+	-fx-opacity:.8;
+}
+.card{
+	-fx-background-color:#fbffa9;
+}

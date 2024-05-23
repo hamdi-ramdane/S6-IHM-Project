@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="window_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #2A2E31; -fx-border-color: #E77719;" stylesheets="@../styles/menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.menuController">
+   <top>
+      <AnchorPane prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: #212128;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="close_window" layoutX="946.0" layoutY="15.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #E77719;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="41.0" layoutY="19.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #E77719;" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="cart_nav_button" layoutX="159.0" layoutY="19.0" mnemonicParsing="false" onAction="#navToCart" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #D9D9D9;" text="Cart">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="admin_nav_button" layoutX="277.0" layoutY="19.0" mnemonicParsing="false" onAction="#navToAdmin" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #D9D9D9;" text="Admin">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="578.0" prefWidth="725.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="40.0" layoutY="27.0" prefHeight="515.0" prefWidth="928.0" style="-fx-background-color: #212128; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ScrollPane prefHeight="515.3333333333334" prefWidth="928.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <GridPane fx:id="menu_grid" alignment="CENTER" prefHeight="20.0" prefWidth="79.0" styleClass="menu-grid">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

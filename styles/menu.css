@@ -1,0 +1,20 @@
+	
+.category-button:focus{
+	-fx-text-fill:#ffffff;
+}
+.category-button:hover{
+	-fx-background-color:  #E77719;
+	-fx-text-fill:#ffffff;
+	-fx-min-width:200;
+}
+
+.scroll-pane{
+	-fx-padding: 10 40;
+
+}
+.menu-grid{
+	-fx-hgap: 30px; /* Horizontal gap */
+    -fx-vgap: 10px; /* Vertical gap */
+}
+
+
